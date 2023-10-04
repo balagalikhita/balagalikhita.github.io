@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Appointments</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="full-page">
+        <div class="navbar">
+
+            <div class="logo">
+                <img src="images/logo.jpg" alt="">
+            </div>
+            <nav id="nav-scroll">
+                <label for="search by">Search by:</label>
+
+                <select name="select" id="select">
+                    <option value="specialist">Specialist</option>
+                    <option value="Location">Location</option>
+                    <option value="Name">Clinic Name</option>
+
+                </select>
+
+                <button class="searchby" onclick="getOption()">Search</button>
+
+
+            </nav>
+            <div id="welcomeMessage"></div>
+            
+        </div>
+        <div id="anim"><iframe src="https://embed.lottiefiles.com/animation/53911"></iframe></div>
+        <span id="sp"><h2>SEARCH THE DOCTORS</h2>Search your doctors based upon clinic name, location and specialist</span>
+        <div id="table-form">
+            <div class="table-box">
+                <div id="table1" class="table1">
+                    <table>
+                        <tr>
+                            <th>SlNo.</th>
+                            <th>Specialist </th>
+                            <th> Schedule Appointment </th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td> Internal Medicine</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>Pediatrician</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td> Obstetricians/gynecologist</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Cardiologist</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td> Oncologist</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td> Radiologist</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td> Anesthesiologist</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>8.</td>
+                            <td> Surgeon</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>9.</td>
+                            <td> Psychiatrist</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>10.</td>
+                            <td> Physician executive</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>11.</td>
+                            <td> Gastroenterologist</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>12.</td>
+                            <td>Pulmonologist</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>13.</td>
+                            <td> Infectious disease</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>14.</td>
+                            <td> Nephrologist</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>15.</td>
+                            <td> Endocrinologist</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>16.</td>
+                            <td>Ophthalmologist</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>17.</td>
+                            <td> Otolaryngologist</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>18.</td>
+                            <td> Dermatologist</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>19.</td>
+                            <td> Psychiatrist</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>20.</td>
+                            <td> Neurologist</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+
+                    </table>
+
+                </div>
+                <div id="table2" class="table2">
+                    <table>
+                        <tr>
+                            <th>SlNo.</th>
+                            <th>Location</th>
+                            <th> Schedule Appointment </th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td> Maddilapalem</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>MVP</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td> Jagadamba</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Marikavalasa</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td> Dwaraka Nagar</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td>Ananda Puram</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td>Tagarapuvalasa</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>8.</td>
+                            <td> Boyapalem</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>9.</td>
+                            <td>Hanumantuvaka</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>10.</td>
+                            <td>Kurmanapalem</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>11.</td>
+                            <td>Gajuvaka</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>12.</td>
+                            <td>Madhurawada</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>13.</td>
+                            <td>Krishna Nagar</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>14.</td>
+                            <td>Malkapuram</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>15.</td>
+                            <td>NarasimhaNagar</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>16.</td>
+                            <td>Duvvada</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>17.</td>
+                            <td>Allipuram</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>18.</td>
+                            <td>Adarsha Nagar Road</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>19.</td>
+                            <td>Akkayyapalem</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>20.</td>
+                            <td>Complex Road</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="table3" class="table3">
+                    <table>
+                        <tr>
+                            <th>SlNo.</th>
+                            <th>Clinic Name</th>
+                            <th> Schedule Appointment </th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Emergency Healthcare</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td> Specialty Healthcare</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td> Chiropractic Care</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>Trust Care Center</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td> Hassle-free Health Care</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td> Allied Health Services</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td> Happy Health Helpers</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>8.</td>
+                            <td> Healthcare Abundance</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>9.</td>
+                            <td> KaiserHealth Care</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>10.</td>
+                            <td>Nutri-Pathic Clinic</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>11.</td>
+                            <td>AloviaClinic</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>12.</td>
+                            <td>Sri Satya Clinic</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>13.</td>
+                            <td>Pharma Help </td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>14.</td>
+                            <td>Care Hospital</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>15.</td>
+                            <td>Apollo clinic</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>16.</td>
+                            <td>Wisdom hospital</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>17.</td>
+                            <td>All we care hospital</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>18.</td>
+                            <td>Rainbow Hospital</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>19.</td>
+                            <td>Seven hills</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                        <tr>
+                            <td>20.</td>
+                            <td>Q</td>
+                            <td><button id="appo"onclick="makeappo()">Take Appointment</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+    }
+
+    // Get the fullName parameter from the URL
+    var fullName = getParameterByName('fullName');
+
+    // Display the welcome message
+    if (fullName) {
+        document.getElementById("welcomeMessage").innerHTML = "Welcome, " + fullName;
+    }
+
+        function getOption() {
+            var se = document.querySelector('#select').value;
+            var modal;
+            if (se == 'specialist') {
+                modal = document.querySelector("#table1");
+               }
+           else if (se == 'Location') {
+                modal = document.querySelector("#table2");      
+            }
+           else{
+                modal = document.querySelector("#table3");
+            }
+            modal.style.display = 'block';
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+        function makeappo(){
+            window.location.assign('index3.html');
+        }
+
+    </script>
+
+</body>
+
+</html>

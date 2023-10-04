@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style2.css">
+<body>
+<form action="appointment" method="get">
+    <div class="full-page">
+        <h1 class="heading">MAKE YOUR APPOINTMENT</h1>
+        <div class="dropdown">
+            <h3 class=heading1>Select ClinicName</h3>
+             <select name="Clinic" id="select1" required>
+            <option>CLINIC NAME</option>
+            <option>Emergency Healthcare</option>
+            <option>Specialty Healthcare</option>
+            <option> Chiropractic Care</option>
+            <option>Trust Care Center</option>
+            <option> Hassle-free Health Care</option>
+            <option>Allied Health Services</option>
+            <option>Happy Health Helpers</option>
+            <option>Healthcare Abundance</option>
+            <option> KaiserHealth Care</option>
+            <option>Nutri-Pathic Clinic</option>
+            <option>AloviaClinic</option>
+            <option>Sri Satya Clinic</option>
+            <option>Pharma Help</option>
+            <option>Care Hospital</option>
+            <option>Apollo clinic</option>
+            <option>Wisdom hospital</option>
+            <option>All we care hospital</option>
+            <option>Rainbow Hospital</option>
+            <option>Seven hills</option>
+            <option>Q Hospitals</option>
+        </select>
+        <h3 class=heading2>Select Location</h3>
+        <select name="Location" id="select2" required>
+            <option>LOCATION</option>
+            <option> Maddilapalem</option>
+            <option>MVP</option>
+            <option>Jagadamba</option>
+            <option>Marikavalasa</option>
+            <option> Dwaraka Nagar</option>
+            <option>Ananda Puram</option>
+            <option>Tagarapuvalasa</option>
+            <option> Boyapalem</option>
+            <option>Hanumantuvaka</option>
+            <option>Kurmanapalem</option>
+            <option>Gajuvaka</option>
+            <option>Madhurawada</option>
+            <option>Krishna Nagar</option>
+            <option>Malkapuram</option>
+            <option>NarasimhaNagar</option>
+            <option>Duvvada</option>
+            <option>Allipuram</option>
+            <option>Adarsha Nagar Road</option>
+            <option>Akkayyapalem</option>
+            <option>Complex Road</option>
+        </select>
+        <h3 class=heading3>Select Specialist</h3>
+        <select name="Specialist" id="select3" >
+            <option>SPECIALIST</option>
+            <option > Internal Medicine </option>
+            <option >Pediatrician</option>
+            <option >Obstetricians/gynecologist</option>
+            <option >Cardiologist</option>
+            <option >Oncologist</option>
+            <option > Radiologist</option>
+            <option >Anesthesiologist</option>
+            <option > Surgeon</option>
+            <option > Psychiatrist</option>
+            <option >Physician executive</option>
+            <option > Gastroenterologist</option>
+            <option >Pulmonologist</option>
+            <option > Infectious disease</option>
+            <option > Nephrologist</option>
+            <option > Endocrinologist</option>
+            <option >Ophthalmologist</option>
+            <option >Otolaryngologist</option>
+            <option >Dermatologist</option>
+            <option > Psychiatrist</option>
+            <option >Neurologist</option>
+        </select>
+    </div>
+    <h2 class="date-time">PICK YOUR SLOT:
+        <input type="datetime-local" name="DATE_AND_TIME" id="time" required>
+        (please select time between 9AM to 5PM)
+    </h2>
+    <button type="submit" class="make-appo" onclick="slotbook()" >MAKE APPOINTMENT</button>
+</div>
+</form>
+<script>
+    function slotbook(){
+       var clinic=document.querySelector("#select1").value;
+       var specialist=document.querySelector('#select3').value;
+       var location=document.querySelector('#select2').value;
+       if(clinic !="Emergency Healthcare"){
+alert("Slot Confirmed!!");
+       }
+       else{
+           alert("check your details !! In Emergency Healthcare available specialists are Endocrinologist ,Nephrologist,Otolaryngologist and location is MVP,Maddilapalem,Boyapalem");
+       }
+    }
+</script>
+</body>
+</html>

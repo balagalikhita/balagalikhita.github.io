@@ -1,0 +1,100 @@
+
+nav label{
+    font-size: 20px;
+    font-family:sans-serif;
+}
+nav select{
+    text-decoration:none;
+    font-size:20px;
+    color:black;
+    font-family:sans-serif;
+}
+nav button{
+    height:53px;
+    width:93px;
+    border:2px solid white;
+    border-radius:7px;
+    font-size:20px;
+    color:white;
+    outline:none;        
+    background:rgb(63, 202, 63);
+    cursor:pointer;
+    font-family:sans-serif;
+}
+nav button:hover{
+    color:greenyellow;
+}
+table, th, td {
+    border:1px solid black;
+    font-size:15px;
+    font-family:sans-serif;
+  }
+  table button{
+    border:1px solid black;
+    font-size:20px;
+    font-family:sans-serif;
+    background:rgb(63, 202, 63);
+    cursor:pointer;
+    border:2px solid white;
+    border-radius:7px;
+    color:white;
+  }
+  #table1{
+      display:none;
+  }
+  #table2{
+    display:none;
+}
+#table3{
+    display:none;
+}
+#appo{
+    display: flex;
+position: relative;
+align-items: center;
+justify-content: center;
+left: 34px;
+font-size:10px;
+}
+ 
+    
+
+  .table1{
+     
+    width: 538px;
+    height: 645px;
+    position:relative;
+    margin:2% auto;
+   background:linear-gradient(rgb(80, 153, 166),rgb(110, 230, 110));
+    padding:10px;
+    overflow:hidden;
+  }
+  .table2{
+    
+    width: 538px;
+    height: 645px;
+    position:relative;
+    margin:2% auto;
+     background:linear-gradient(rgb(80, 153, 166),rgb(110, 230, 110));
+    padding:10px;
+    overflow:hidden;
+}
+.table3{
+   
+    width: 538px;
+    height: 645px;
+    position:relative;
+    margin:2% auto;
+     background:linear-gradient(rgb(80, 153, 166),rgb(110, 230, 110));
+    padding:10px;
+    overflow:hidden;
+}
+.table-box{
+    width: 422px;
+    height: 488px;
+    position:relative;
+    margin:2% auto;
+     
+    padding:10px;
+    overflow:hidden;
+}

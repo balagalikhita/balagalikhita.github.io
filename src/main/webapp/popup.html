@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+     href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'
+      rel="stylesheet"
+    />
+    <link href="style3.css" rel="stylesheet" />
+    <title>success</title>
+  </head>
+  <body>
+   <!--  <a href="#" class="trigger_popup" id="success_trigger">Success</a> -->
+    <div class="popup" id="success">
+      <div class="popup-content">
+        <div class="imgbox">
+          <img src="images/checked.png" alt="" class="img rotate-horizontal">
+        </div>
+        <div class="title">
+          <h3>Success!</h3>
+        </div>
+        <p class="para">Your account has been created successfully</p>
+        <form action="">
+          <a href="#" class="button" id="s_button" onclick="okay()">OKAY</a>
+        </form>
+      </div>
+    </div>
+    
+    <script >
+    var success_popup=document.getElementById("success");
+    success_popup.style.display ="block";
+    function okay(){
+    	window.location.assign('index.html');
+    }
+    </script>
+  </body>
+   
+</html>

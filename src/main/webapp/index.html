@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full-page">
+        
+        <div class="navbar">
+            
+            <div class="logo">
+                <img src="images/logo.jpg" alt="">
+            </div>
+           
+        <nav>
+            <ul id="menuitems">
+                <li><a href="#">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'" >Patient's Login</button></li>
+               
+            </ul>
+        </nav>
+           
+        </div>
+        
+        <div id="anim"><iframe src="https://embed.lottiefiles.com/animation/24867"  ></iframe></div>
+        <h2 id="animated-text">WORKS:24HOURS </h2>
+        <span id="sp"><h2>SAVES YOUR TIME AND HELPS YOU FIND THE DOCTOR</h2>Welcome to our convenient online doctor appointment platform, where you can easily schedule appointments, consult with trusted physicians, and prioritize your health with just a few clicks</span>
+        <div id="login-form" class='login-page'>
+            <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <input type="button" onclick='login()' class='toggle-btn' value="Log In"/>
+                    <input type="button" onclick='register()' class='toggle-btn' value="Register"/>
+                </div>
+                <!--login form-->
+                <form id="login" class='input-group-login' action="login" method="post">
+                    <input type="text" class='input-field' name="EmailId" id="email" placeholder='Email Id' required>
+                    <input type="password" class='input-field' name='Password' id="password" placeholder='Enter Password' required>
+                    <input type="checkbox" class='checkbox' id="check1"><span>Remember Password</span>
+                    <button type='submit' class='submit-btn' onclick='auth()'>Log In</button>
+                   <!--  <span>Don't have an account? Create one</span> -->
+                </form>
+                <!--Registration form-->
+                <form id="register" class='input-group-register'  action="register" method="get">
+                    <input type="text" class='input-field' placeholder='First Name' name='FirstName' required>
+                    <input type="text" class='input-field' placeholder='Last Name' name='LastName' required>
+                    <input type="text" class="input-field" placeholder="Blood Goup" name='BloodGroup'>
+                    <input type="tel" class="input-field" placeholder="Phone number" name='Phonenumber'>
+                    <input type="text" class='input-field' id="email" placeholder='EmailId' name='EmailId' required>
+                    <input type="password" class='input-field' placeholder='Enter Password' name='Password' required>
+                    <input type="password" class='input-field' placeholder='Confirm Password'  required>
+                    <input type="checkbox" class='checkbox' id="check2" required><span>I agree to the terms and conditions</span>
+                    <button type='submit' class='submit-btn' onclick='Reg()'>Register</button>
+                </form>
+            </div>
+            </div>
+           <!--  <div id="About">
+            <h2 class="heading4">Online doctor appointment platforms typically maintain a history of appointment records, including the date and time of each appointment. This history allows users to keep track of their past appointments and reference them as needed. The specific format and details provided in the appointment history may vary depending on the platform, but it commonly includes the following information:
+    
+            Date: The date on which the appointment was scheduled or took place.
+            Time: The specific time of the appointment, indicating when it was scheduled or occurred.
+            Doctor/Physician: The name or identifier of the healthcare professional with whom the appointment was made.
+            Patient: The name or identifier of the patient who scheduled or attended the appointment.
+            Appointment Details: Additional information about the appointment, such as the reason for the visit or any notes provided by the doctor.
+        
+        By referring to the appointment history, patients can review their past appointments, plan future visits, and have a record of their healthcare interactions for reference and continuity of care.</h2>
+        </div>   -->           
+        <!-- <div id="Contact"></div>
+        </div> -->
+         <!--for t0ggle the login and registration of patient's -->
+    <script>
+        var x=document.getElementById('login');
+        var y=document.getElementById('register');
+        var z=document.getElementById('btn');
+       
+        function register(){
+            x.style.left='-400px';
+            y.style.left='50px';
+            z.style.left='110px';
+        }
+        function login(){
+            x.style.left='50px';
+            y.style.left='450px';
+            z.style.left='0px';
+           
+        }
+    </script>
+    <script>
+        var modal=document.getElementById('login-form');
+        window.onclick=function(event)
+        {
+            if(event.target==modal){
+                modal.style.display="none";
+            }
+        }
+    </script>
+
+         
+</body>
+</html>

@@ -1,0 +1,159 @@
+.heading{
+    color:rgb(10, 124, 142);
+    display: flex;
+align-items: center;
+left: 526px;
+position: relative;
+top: 136px;
+
+}
+.heading1{
+    color:rgb(24, 167, 189);
+    left: 259px;
+    position: absolute;
+    top: 202px;
+}
+.heading2{
+    color:rgb(24, 167, 189);
+    left: 675px;
+    position: absolute;
+    top: 202px;
+}
+.heading3{
+    color:rgb(24, 167, 189);    
+    right: 370px;
+    position: absolute;
+    top: 202px;
+    
+}
+.heading4{
+    color: rgb(8, 64, 73);
+top: 182px;
+left:500px;
+position: absolute;
+font-size: 18px;
+width:700px;
+}
+#select1{
+    font-size: 16px;
+    color: rgb(24, 167, 189);
+    background: #d7e0c9;
+left: 254px;
+position: absolute;
+top: 246px;
+}
+#select2{
+    font-size: 16px;
+    color: rgb(24, 167, 189);
+    background: #d7e0c9;
+    left: 661px;
+    position: absolute;
+top: 246px;
+}
+#select3{
+    font-size: 16px;
+    color: rgb(24, 167, 189);
+    background: #d7e0c9;
+    right: 338px;
+    position: absolute;
+top: 246px;
+}
+.make-appo{
+    font-size: 20px;
+color: rgb(24, 167, 189);
+background: #b7ca9a;
+left: 646px;
+border-radius: 7px;
+top: 357px;
+    position: absolute;
+    font-size: 20px;
+}
+.date-time{
+    font-size: 16px;
+color: rgb(24, 167, 189);
+left: 509px;
+position: absolute;
+top: 310px;
+} 
+@media (max-width: 912px) {
+    /* Adjust styles for tablet screens here */
+    .heading {
+        font-size: 1.5rem; /* Increase font size */
+        color: rgb(10, 124, 142);
+        display: flex;
+        align-items: center;
+        left: 252px;
+        position: relative;
+        top: 136px;
+    }
+    .heading3 {
+        color: rgb(20, 119, 135);
+        right: 538px;
+        position: absolute;
+        top: 202px;
+      }
+      .heading1 {
+        color: rgb(20, 119, 135);
+        left: 353px;
+        position: absolute;
+        top: 202px;
+      }
+      .heading2 {
+        color: rgb(20, 119, 135);
+        left: 577px;
+        position: absolute;
+        top: 202px;
+      }
+      #select3 {
+        font-size: 14px;
+        color: rgb(24, 167, 189);
+        background: #b2eff2;
+        right: 501px;
+        position: absolute;
+        top: 246px;
+      }
+      #select1 {
+        font-size: 14px;
+        color: rgb(24, 167, 189);
+        background: #b2eff2;
+        left: 347px;
+        position: absolute;
+        top: 246px;
+      }
+      #select2 {
+        font-size: 14px;
+        color: rgb(24, 167, 189);
+        background: #b2eff2;
+        left: 562px;
+        position: absolute;
+        top: 246px;
+      }
+      .date-time {
+        font-size: 16px;
+        color: rgb(24, 167, 189);
+        left: 82px;
+        position: absolute;
+        top: 310px;
+      }
+      .make-appo {
+        font-size: 20px;
+        color: rgb(13, 109, 123);
+        background: #88dcea;
+        left: 297px;
+        border-radius: 7px;
+        top: 391px;
+        position: absolute;
+        font-size: 22px;
+      }
+    /* Add more adjustments as needed for tablet screens */
+}
+
+/* Media query for mobile screens */
+@media (max-width: 480px) {
+    /* Adjust styles for mobile screens here */
+    .heading {
+        font-size: 1.2rem; 
+       
+    }
+    /* Add more adjustments as needed for mobile screens */
+}

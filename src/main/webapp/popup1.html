@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link
+     href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'
+      rel="stylesheet"
+    />
+    <link href="style3.css" rel="stylesheet" />
+<title>Error</title>
+</head>
+<body>
+<!-- <a href="#" class="trigger_popup" id="error_trigger">Error</a> -->
+    <div class="popup" id="error">
+      <div class="popup-content">
+        <div class="imgbox">
+          <img src="images/cancel.png" alt="" class="img rotate-horizontal">
+        </div>
+        <div class="title">
+          <h3>Sorry :(</h3>
+        </div>
+        <p class="para">You're email id is already registered!</p>
+        <form action="">
+          <a href="#" class="button" id="e_button" onclick="try_again()">TRY AGAIN</a>
+        </form>
+      </div>
+    </div>
+    <script >
+    var error_popup =document.getElementById("error");
+    error_popup.style.display="block";
+    function try_again(){
+    	window.location.assign('index.html');
+    }
+    </script>
+</body>
+</html>

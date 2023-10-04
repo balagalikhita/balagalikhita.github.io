@@ -1,0 +1,130 @@
+body{
+    font-family: Poppins;
+    min-height: 100vh;
+     background:linear-gradient(rgb(80, 153, 166),rgb(110, 230, 110));
+}
+.trigger_popup{
+    cursor: pointer;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+}
+#success_trigger{
+    background: #32ba7c;
+    position: fixed;
+    top:20%;
+    left:20%;
+}
+#error_trigger{
+    background: #ff3636;
+    position: fixed;
+    top:20%;
+    left:60%;
+}
+
+#success{
+    display: none;
+    position: fixed;
+    top:20%;
+    left:39%
+}
+#error{
+    display: none;
+    position: fixed;
+    top:20%;
+    left:39%
+}
+
+.popup-content{
+   /* display: block; */
+    width: 326px;
+    height: 408px;
+    background: white;
+    box-shadow: 4px 4px 70px 10px rgb(0 0 0/11%);
+    border-radius: 25px;
+}
+.imgbox{
+    text-align: center;
+}
+.img{
+    width: 112px;
+    margin-top: 40px;
+}
+.title{
+    font-weight: 500;
+    font-size: 24px;
+   letter-spacing: 0.05em;
+   text-align: center;
+   margin: auto;
+}
+#success .title{
+   color: #32ba7c;
+}
+#error .title{
+    color: #ff3636;
+}
+.para{
+    font-weight: 500;
+    width: 80%;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    margin: auto;
+
+
+}
+.button{
+    width: 50%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 25px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+#s_button{
+    background: #32ba7c;
+}
+#e_button{
+    background: #ff3636;
+}
+/* Add this to your CSS file */
+@keyframes rotate-horizontal {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+
+.rotate-horizontal {
+  animation: rotate-horizontal 3s linear ; /* Rotate for 3 seconds infinitely */
+}
+
+
+@media (max-width:400px){
+    .popup-content{
+        position: absolute;
+        left: -99px;
+        top: -112px;
+        width: 273px;
+        height: 350px;
+    }
+    .img {
+        width: 88px;
+        margin-top: 40px;
+      }
+      .title{
+        font-size: 20px;
+      }
+      .para{
+        font-size: 16px;
+      }
+    
+}
